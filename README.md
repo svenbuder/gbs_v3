@@ -2,11 +2,14 @@
 
 This enhanced version of the Gaia Benchmark Stars catalogue is based on Table 6 from [Soubiran et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023arXiv231011302S).
 
-Starting from the above mentioned table, I have performed several individual crossmatches, which are saved in the directory *individual_crossmatches* and combined them to one *Master Crossmatch*. Note that not all 192 stars have entries in 2MASS (191, not gam Sge / HIP98337) or Gaia DR3 (179 of 192).
+Starting from the above mentioned table, I have performed several individual crossmatches, which are saved in the directory *individual_crossmatches* and combined them to one *Master Crossmatch*. Note that not all 192 stars have entries in 2MASS (189) or Gaia DR3 (180 of 192) or AllWISE (179 of 192).
 
 ## 1) Master Crossmatch
 
+I have matched the individual crossmatches with a left outer join to the above mentioned table to create the following master catalogs:
 
+gbs_v3_tmass_gaiadr3_hip_allwise_all_columns.fits		with all 264 columns (423 KB)
+gbs_v3_tmass_gaiadr3_hip_allwise_all_lite.fits			with a smaller selection of 117 columns (202 KB)
 
 ## 2) Individual Crossmatches
 
